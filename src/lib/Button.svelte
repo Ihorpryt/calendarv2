@@ -23,7 +23,6 @@
         border: none;
         padding: 0 12px;
         transition: 0.3s;
-        /* color:#01ADF5; */
     }
     
     .primary {
