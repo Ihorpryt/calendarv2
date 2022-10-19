@@ -100,6 +100,9 @@
         border-top: 0.5px solid grey;
     }
 
+    :global(body.dark-mode) h2 {
+        color: white;
+    }
     :global(body.dark-mode) .sub-panel {
 		background: #131419;
 	}
