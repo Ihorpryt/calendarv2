@@ -25,6 +25,7 @@
                     <ChevronRight color="" />
                 </Button>
             </div>
+                <h2>October 2022</h2>
         </div>
 
         <div class="right">
@@ -51,6 +52,14 @@
 </section>
 
 <style>
+    h2 {
+        font-family: 'Inter Tight';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        color: #000000;
+    }
     section {
         display: flex;
         flex-direction: column;
