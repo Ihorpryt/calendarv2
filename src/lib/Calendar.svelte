@@ -59,6 +59,7 @@
         font-size: 22px;
         line-height: 30px;
         color: #000000;
+        margin-left: 24px;
     }
     section {
         display: flex;
@@ -71,7 +72,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        height: 60px;
+        min-height: 56px;
+        height: 56px;
         background: #D9D9D9;
         padding: 0 24px;
         transition: 0.3s;
@@ -79,12 +81,12 @@
     .navigator {
         display: flex;
         flex-direction: row;
+        margin-left: 8px;
     }
     .left {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 24px;
     }
     .right {
         display: flex;

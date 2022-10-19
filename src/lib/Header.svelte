@@ -15,8 +15,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        /* width: 100%; */
-        height: 60px;
+        min-height: 56px;
+        height: 56px;
         background: #BDBDBD;
         padding-left: 24px;
         padding-right: 24px;
