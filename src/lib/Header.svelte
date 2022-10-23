@@ -6,7 +6,7 @@
 
 <header>
     <p>Calendar</p>
-    <DarkModeSwitch>M</DarkModeSwitch>
+    <DarkModeSwitch />
 </header>
 
 <style>
