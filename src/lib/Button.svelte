@@ -17,7 +17,7 @@
 
         font-family: 'Inter Tight';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 14px;
         line-height: 17px;
         border: none;
@@ -54,10 +54,18 @@
 
     :global(body.dark-mode) .secondary {
         color: white;
+        background: rgba(255, 255, 255, 0.04);
+        border-color: rgba(255, 255, 255, 0);
+    }
+    :global(body.dark-mode) .secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
     }
     :global(body.dark-mode) .primary {
         background: #01ADF5;
         color: white;
+    }
+    :global(body.dark-mode) .chevron-left {
+        border-right: 0.5px solid #131419;
     }
 
 </style>

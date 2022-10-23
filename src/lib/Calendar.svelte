@@ -1,12 +1,23 @@
-<script>
+<script>  
     import Button from "./Button.svelte";
     import Cell from "./Cell.svelte";
+    import CellDay from "./CellDay.svelte";
     import ChevronLeft from "./Icons/ChevronLeft.svelte";
     import ChevronRight from "./Icons/ChevronRight.svelte";
     import FilterIcon from "./Icons/FilterIcon.svelte";
     import PlusIcon from "./Icons/PlusIcon.svelte";
     
     let hasClass = document.body.classList.contains('dark-mode');
+
+    const days = [
+        {day: 'Sunday'},
+		{day: 'Monday'},
+        {day: 'Tuesday'},
+        {day: 'Wednesday'},
+        {day: 'Thursday'},
+        {day: 'Friday'},
+        {day: 'Saturday'},
+    ];
 
 
 </script>
@@ -22,7 +33,7 @@
                     <ChevronLeft />
                 </Button>
                 <Button variant="secondary chevron-right"> 
-                    <ChevronRight color="" />
+                    <ChevronRight />
                 </Button>
             </div>
                 <h2>October 2022</h2>
@@ -39,6 +50,9 @@
         </div>
     </div>
     <div class="grid">
+        {#each days as {day}}
+            <CellDay day={day} />
+        {/each}
         {#each Array(3) as _, index (index)}
             <Cell date={index+28} notActive={true} />
         {/each}
@@ -97,6 +111,7 @@
     .grid {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr;
         height: 100%;
         width: 100%;
         border-top: 0.5px solid grey;
