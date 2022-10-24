@@ -1,12 +1,16 @@
 <script>
     import DarkModeSwitch from "./DarkModeSwitch.svelte";
+    import UserSelector from "./UserSelector.svelte";
 
 </script>
 
 
 <header>
     <p>Calendar</p>
-    <DarkModeSwitch />
+    <div class="right">
+        <DarkModeSwitch />
+        <UserSelector />
+    </div>
 </header>
 
 <style>
@@ -26,6 +30,12 @@
         font-family: 'Inter Tight', sans-serif;
         color: black;
         transition: 0.3s;
+    }
+    .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
     }
 
 

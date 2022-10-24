@@ -5,7 +5,9 @@
     import ChevronLeft from "./Icons/ChevronLeft.svelte";
     import ChevronRight from "./Icons/ChevronRight.svelte";
     import FilterIcon from "./Icons/FilterIcon.svelte";
+    import Legend from "./Icons/Legend.svelte";
     import PlusIcon from "./Icons/PlusIcon.svelte";
+    import Print from "./Icons/Print.svelte";
     
     let hasClass = document.body.classList.contains('dark-mode');
 
@@ -41,7 +43,13 @@
 
         <div class="right">
             <Button variant="secondary"> 
-                <FilterIcon color=""/> 
+                <Print/> 
+            </Button>
+            <Button variant="secondary"> 
+                <Legend/> 
+            </Button>
+            <Button variant="secondary"> 
+                <FilterIcon/> 
             </Button>
             <Button variant="primary"> 
                 <PlusIcon color="white"/> 
