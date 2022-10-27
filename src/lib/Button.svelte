@@ -65,7 +65,7 @@
         color: white;
     }
     :global(body.dark-mode) .chevron-left {
-        border-right: 0.5px solid #131419;
+        border-right: 0.5px solid #000;
     }
 
 </style>

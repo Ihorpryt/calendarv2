@@ -62,13 +62,18 @@
             <CellDay day={day} />
         {/each}
         {#each Array(3) as _, index (index)}
-            <Cell date={index+28} notActive={true} />
+            <Cell date={index+28} notActive={true} current={false} />
         {/each}
-        {#each Array(31) as _, index (index)}
-            <Cell date={index+1} notActive={false} />
+        {#each Array(28) as _, index (index)}
+            <Cell date={index+1} notActive={false} current={false}/>
+        {/each}
+
+        <Cell date="29" notActive={false} current={true}/>
+        {#each Array(2) as _, index (index)}
+            <Cell date={index+30} notActive={false} current={false} />
         {/each}
         {#each Array(8) as _, index (index)}
-            <Cell date={index+1} notActive={true} />
+            <Cell date={index+1} notActive={true} current={false} />
         {/each}
     </div>
 </section>
