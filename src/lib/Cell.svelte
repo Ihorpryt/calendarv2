@@ -10,6 +10,7 @@
 
 <style>
     .cell {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -44,6 +45,32 @@
     .not-active p {
         color: gray;
     }
+
+    .cell::after {
+        transition: opacity .3s,visibility .3s;
+        content: "\F067";
+        opacity: 0;
+        /* visibility: hidden; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 26px;
+        height: 26px;
+        background: #01ADF5;
+        font: 300 14px "Font Awesome 5 Pro";
+        line-height: 17px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        z-index: 24;
+        border-bottom-right-radius: 8px;
+    }
+    .cell:hover:after {
+        opacity: 1;
+    }
+
     :global(body.dark-mode) .cell {
         background: #131419;
         border-color: black;
